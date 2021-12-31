@@ -8,11 +8,11 @@ const MyPosts = () => {
             <div>
                 <textarea></textarea>
                 <button>Add post</button>
-                <button>Remove</button>
+
             </div>
             <div className={s.posts}>
-                <Post />
-                <Post />
+                <Post message='I`m going to visit Japan' likeCount='4' />
+                <Post message='It`s my project' likeCount='5' />
                 <Post />
             </div>
         </div>
