@@ -1,0 +1,8 @@
+.descriptionBlock {
+    padding: 10px;
+}
+.wallpaper {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
