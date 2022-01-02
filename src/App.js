@@ -1,22 +1,36 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dialogs from './components/Dialogs/Dialogs';
+import Groups from './components/Groups/Groups';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
+import News from './components/News/News';
 import Profile from './components/Profile/Profile';
+import Settings from './components/Settings/Settings';
 
 
 
 const App = () => {
   return (
-    <div className='app-wrapper'>
-      <Header />
-      <Navbar />
-      {/* <Profile /> */}
-      <div className='app-wrapper-content'>
-        <Dialogs />
+    <BrowserRouter>
+      {/* Заключаем всё в браузер-роутер */}
+      <div className='app-wrapper'>
+        <Header />
+        <Navbar />
+        <div className='app-wrapper-content'>
+          <Routes>
+            {/* Оборачиваем в роутеры */}
+            <Route path='/dialogs' element={<Dialogs />} />
+            {/* Сами роутеры, где если путь заканчивается на что-то, то переходим к конкретному компоненту */}
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/news' element={<News />} />
+            <Route path='/groups' element={<Groups />} />
+            <Route path='/settings' element={<Settings />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
