@@ -16,6 +16,11 @@
   grid-gap: 10px;
   /* расстояние между элементами */
 }
-
-
-
+.app-wrapper-content {
+  grid-area: c;
+  background-color: whitesmoke;
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.44);
+}
+.content img {
+  padding: 5px;
+}
