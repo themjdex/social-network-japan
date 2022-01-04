@@ -8,9 +8,17 @@
 }
 .dialogsItems .active {
   color: brown;
+  cursor: pointer;
 }
 .dialog {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black 1px solid;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 10%;
+  
 }
 .messages {
   padding: 10px;

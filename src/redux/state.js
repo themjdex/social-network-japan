@@ -2,11 +2,11 @@
 let state = {
     dialogsPage: {
         dialogs: [
-            { id: 1, name: 'Akihiko' },
-            { id: 2, name: 'Adam' },
-            { id: 3, name: 'Jannet' },
-            { id: 4, name: 'Ioshiro' },
-            { id: 5, name: 'Clark' },
+            { id: 1, name: 'Akihiko', link: 'https://i.yapx.ru/P7FTI.png' },
+            { id: 2, name: 'Adam', link: 'https://i.yapx.ru/P7FTK.png' },
+            { id: 3, name: 'Jannet', link: 'https://i.yapx.ru/P7FTL.png' },
+            { id: 4, name: 'Ioshiro', link: 'https://i.yapx.ru/P7FTM.png' },
+            { id: 5, name: 'Clark', link: 'https://i.yapx.ru/P7FTQ.png' },
         ],
         messages: [
             { id: 1, message: 'Hi!' },
