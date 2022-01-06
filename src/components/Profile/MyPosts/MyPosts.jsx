@@ -10,9 +10,9 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef(); // создаем референс на определенный объект
 
     let addPost = () => {
-        debugger;
         let text = newPostElement.current.value; // записываем в переменную ссылку на текущее значение указанного рефа, который подключается к HTML-элементу
-        alert(text);
+        props.addPost(text);
+        newPostElement.current.value = '';
     }
 
     return (
