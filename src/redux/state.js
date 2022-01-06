@@ -9,11 +9,11 @@ let state = {
             { id: 5, name: 'Clark', link: 'https://i.yapx.ru/P7FTQ.png' },
         ],
         messages: [
-            { id: 1, message: 'Hi!' },
-            { id: 2, message: 'How are you?' },
-            { id: 3, message: 'When will you arrive?' },
-            { id: 4, message: 'LOL:)))))' },
-            { id: 5, message: 'Goodbye.' },
+            { id: 1, message: 'Hi!', sender: true },
+            { id: 2, message: 'How are you?', sender: true },
+            { id: 3, message: 'When will you arrive?', sender: true },
+            { id: 4, message: 'LOL:)))))', sender: false },
+            { id: 5, message: 'Goodbye.', sender: false },
         ],
     },
     profilePage: {

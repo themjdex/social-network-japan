@@ -6,23 +6,57 @@
 .dialogsItems {
   padding: 10px;
 }
-.dialogsItems .active {
-  color: brown;
+.dialog .active {
   cursor: pointer;
+  
+}
+.dialog a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  
 }
 .dialog {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: black 1px solid;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
   margin: 5px;
   font-size: 20px;
-  border-radius: 10%;
+  margin-bottom: 20px;
+  background-color: #00FFFF;
   
 }
 .messages {
   padding: 10px;
 }
-.message {
-
+.sender{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #00FFFF;
+  margin-bottom: 20px;
+  height: 30px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+  width: 50%;
+  padding-left: 5px;
+}
+.receiver{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #DFDDD8;
+  margin-bottom: 20px;
+  height: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-right: 5px;
 }
