@@ -24,17 +24,25 @@ let state = {
             { id: 3, message: 'Idfdft', likesCount: 55 },
             { id: 4, message: 'Idfwwwwwroject', likesCount: 995 },
         ],
+        newPostText: 'it',
     },
 }
 
-export let addPost = (postMessage) => {
+window.state = state;
+
+export let addPost = () => {
     let newPost = {
         id: 5,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likesCount: 0
     };
 
     state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
     rerenderEntireTree(state);
 }
 

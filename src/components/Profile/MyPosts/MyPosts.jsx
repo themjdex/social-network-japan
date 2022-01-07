@@ -10,9 +10,13 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef(); // создаем референс на определенный объект
 
     let addPost = () => {
-        let text = newPostElement.current.value; // записываем в переменную ссылку на текущее значение указанного рефа, который подключается к HTML-элементу
-        props.addPost(text);
-        newPostElement.current.value = '';
+        props.addPost();
+        props.updateNewPostText('');
+    }
+
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+        props.updateNewPostText(text);
     }
 
     return (
@@ -20,7 +24,7 @@ const MyPosts = (props) => {
             <h3>My posts</h3>
             <div>
                 <div>
-                    <textarea ref={newPostElement}></textarea>
+                    <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText} />
                 </div>
                 <div>
                     <button onClick={addPost}>Add post</button>
