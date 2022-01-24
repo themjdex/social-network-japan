@@ -1,4 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 .userPhoto {
     width: 100px;
     height: 100px;
+}
+.currentPage {
+    font-weight: bold;
+    margin: 0 10px;
+}
+.pagination {
+    margin: 0 5px;
+}
+.uncurrentPage {
+    margin: 0 5px;
 }
