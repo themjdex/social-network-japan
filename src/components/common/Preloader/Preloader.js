@@ -1,7 +1,7 @@
-import preloader from '../../../assets/images/Circle-Loading-Icon.svg'
+import preloader from '../../../assets/images/Circle-Loading-Icon.svg';
 
 let Preloader = () => {
-    <img src={preloader} />
+    return <img src={preloader} />
 };
 
 export default Preloader;
